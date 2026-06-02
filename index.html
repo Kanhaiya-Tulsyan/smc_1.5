@@ -1,328 +1,611 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Complete Website Layout</title>
-		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-	<link href="style.css" rel="stylesheet">
-
-
-
-<!-- Start VWO Async SmartCode -->
-<link rel="preconnect" href="https://dev.visualwebsiteoptimizer.com" />
-<script type='text/javascript' id='vwoCode'>
-window._vwo_code ||
-(function () {
-var w=window,
-d=document;
-var account_id=1225115,
-version=2.2,
-settings_tolerance=2000,
-hide_element='body',
-hide_element_style = 'opacity:0 !important;filter:alpha(opacity=0) !important;background:none !important';
-/* DO NOT EDIT BELOW THIS LINE */
-var f=0, v;
-if(f=!1,v=d.querySelector('#vwoCode'),cc={},-1<d.URL.indexOf('__vwo_disable__')||w._vwo_code)return;try{var e=JSON.parse(localStorage.getItem('_vwo_'+account_id+'_config'));cc=e&&'object'==typeof e?e:{}}catch(e){}function r(t){try{return decodeURIComponent(t)}catch(e){return t}}var s=function(){var e={combination:[],combinationChoose:[],split:[],exclude:[],uuid:null,consent:null,optOut:null},t=d.cookie||'';if(!t)return e;for(var n,i,o=/(?:^|;\s*)(?:(_vis_opt_exp_(\d+)_combi=([^;]*))|(_vis_opt_exp_(\d+)_combi_choose=([^;]*))|(_vis_opt_exp_(\d+)_split=([^:;]*))|(_vis_opt_exp_(\d+)_exclude=[^;]*)|(_vis_opt_out=([^;]*))|(_vwo_global_opt_out=[^;]*)|(_vwo_uuid=([^;]*))|(_vwo_consent=([^;]*)))/g;null!==(n=o.exec(t));)try{n[1]?e.combination.push({id:n[2],value:r(n[3])}):n[4]?e.combinationChoose.push({id:n[5],value:r(n[6])}):n[7]?e.split.push({id:n[8],value:r(n[9])}):n[10]?e.exclude.push({id:n[11]}):n[12]?e.optOut=r(n[13]):n[14]?e.optOut=!0:n[15]?e.uuid=r(n[16]):n[17]&&(i=r(n[18]),e.consent=i&&3<=i.length?i.substring(0,3):null)}catch(e){}return e}();function i(){var e=function(){if(w.VWO&&Array.isArray(w.VWO))for(var e=0;e<w.VWO.length;e++){var t=w.VWO[e];if(Array.isArray(t)&&('setVisitorId'===t[0]||'setSessionId'===t[0]))return!0}return!1}(),t='a='+account_id+'&u='+encodeURIComponent(w._vis_opt_url||d.URL)+'&vn='+version+'&ph=1'+('undefined'!=typeof platform?'&p='+platform:'')+'&st='+w.performance.now();e||((n=function(){var e,t=[],n={},i=w.VWO&&w.VWO.appliedCampaigns||{};for(e in i){var o=i[e]&&i[e].v;o&&(t.push(e+'-'+o+'-1'),n[e]=!0)}if(s&&s.combination)for(var r=0;r<s.combination.length;r++){var a=s.combination[r];n[a.id]||t.push(a.id+'-'+a.value)}return t.join('|')}())&&(t+='&c='+n),(n=function(){var e=[],t={};if(s&&s.combinationChoose)for(var n=0;n<s.combinationChoose.length;n++){var i=s.combinationChoose[n];e.push(i.id+'-'+i.value),t[i.id]=!0}if(s&&s.split)for(var o=0;o<s.split.length;o++)t[(i=s.split[o]).id]||e.push(i.id+'-'+i.value);return e.join('|')}())&&(t+='&cc='+n),(n=function(){var e={},t=[];if(w.VWO&&Array.isArray(w.VWO))for(var n=0;n<w.VWO.length;n++){var i=w.VWO[n];if(Array.isArray(i)&&'setVariation'===i[0]&&i[1]&&Array.isArray(i[1]))for(var o=0;o<i[1].length;o++){var r,a=i[1][o];a&&'object'==typeof a&&(r=a.e,a=a.v,r&&a&&(e[r]=a))}}for(r in e)t.push(r+'-'+e[r]);return t.join('|')}())&&(t+='&sv='+n)),s&&s.optOut&&(t+='&o='+s.optOut);var n=function(){var e=[],t={};if(s&&s.exclude)for(var n=0;n<s.exclude.length;n++){var i=s.exclude[n];t[i.id]||(e.push(i.id),t[i.id]=!0)}return e.join('|')}();return n&&(t+='&e='+n),s&&s.uuid&&(t+='&id='+s.uuid),s&&s.consent&&(t+='&consent='+s.consent),w.name&&-1<w.name.indexOf('_vis_preview')&&(t+='&pM=true'),w.VWO&&w.VWO.ed&&(t+='&ed='+w.VWO.ed),t}code={nonce:v&&v.nonce,library_tolerance:function(){return'undefined'!=typeof library_tolerance?library_tolerance:void 0},settings_tolerance:function(){return cc.sT||settings_tolerance},hide_element_style:function(){return'{'+(cc.hES||hide_element_style)+'}'},hide_element:function(){return performance.getEntriesByName('first-contentful-paint')[0]?'':'string'==typeof cc.hE?cc.hE:hide_element},getVersion:function(){return version},finish:function(e){var t;f||(f=!0,(t=d.getElementById('_vis_opt_path_hides'))&&t.parentNode.removeChild(t),e&&((new Image).src='https://dev.visualwebsiteoptimizer.com/ee.gif?a='+account_id+e))},finished:function(){return f},addScript:function(e){var t=d.createElement('script');t.type='text/javascript',e.src?t.src=e.src:t.text=e.text,v&&t.setAttribute('nonce',v.nonce),d.getElementsByTagName('head')[0].appendChild(t)},load:function(e,t){t=t||{};var n=new XMLHttpRequest;n.open('GET',e,!0),n.withCredentials=!t.dSC,n.responseType=t.responseType||'text',n.onload=function(){if(t.onloadCb)return t.onloadCb(n,e);200===n.status?_vwo_code.addScript({text:n.responseText}):_vwo_code.finish('&e=loading_failure:'+e)},n.onerror=function(){if(t.onerrorCb)return t.onerrorCb(e);_vwo_code.finish('&e=loading_failure:'+e)},n.send()},init:function(){var e,t=this.settings_tolerance();w._vwo_settings_timer=setTimeout(function(){_vwo_code.finish()},t),'body'!==this.hide_element()?(n=d.createElement('style'),e=(t=this.hide_element())?t+this.hide_element_style():'',t=d.getElementsByTagName('head')[0],n.setAttribute('id','_vis_opt_path_hides'),v&&n.setAttribute('nonce',v.nonce),n.setAttribute('type','text/css'),n.styleSheet?n.styleSheet.cssText=e:n.appendChild(d.createTextNode(e)),t.appendChild(n)):(n=d.getElementsByTagName('head')[0],(e=d.createElement('div')).style.cssText='z-index: 2147483647 !important;position: fixed !important;left: 0 !important;top: 0 !important;width: 100% !important;height: 100% !important;background: white !important;',e.setAttribute('id','_vis_opt_path_hides'),e.classList.add('_vis_hide_layer'),n.parentNode.insertBefore(e,n.nextSibling));var n='https://dev.visualwebsiteoptimizer.com/j.php?'+i();-1!==w.location.search.indexOf('_vwo_xhr')?this.addScript({src:n}):this.load(n+'&x=true',{l:1})}};w._vwo_code=code;code.init();})();
+    <title>My Website</title>
+    <style>
+      #contact_us,
+      #about,
+      #suggestions {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 40%;
+        border: 2px outset black;
+        background-color: white;
+        text-align: center;
+        color: black;
+        text-decoration: none;
+        border-radius: 100px;
+        box-sizing: border-box;
+        padding: 10px;
+        font-size: 20px;
+      }
+      .wrapper {
+        position: absolute;
+        top: 100px;
+        left: 450px;
+        background: #fff;
+        max-width: 365px;
+        border-radius: 15px;
+        text-align: center;
+        padding: 25px 25px 30px 25px;
+        box-shadow: 1px 7px 14px -5px rgba(0, 0, 0, 0.15);
+      }
+      .wrapper.hide {
+        opacity: 0;
+        pointer-events: none;
+        transform: scale(0.8);
+        transition: all 0.3s ease;
+      }
+      .wrapper img {
+        max-width: 150px;
+      }
+      .wrapper .content {
+        margin-top: 20px;
+      }
+      .wrapper header {
+        font-size: 25px;
+        font-weight: 600;
+      }
+    </style>
+    <script>
+	window.a = 1;
 </script>
-<!-- End VWO Async SmartCode -->
 
 
+	
+ <script>
+  (function () {
+    const params = new URLSearchParams(window.location.search);
+    const q = params.get("q");
+
+    if (q === "cookie") {
+      // Set cookie
+      document.cookie = "abc=APPapple123; path=/";
+      console.log("Cookie set: abc=APPapple123");
+    }
+
+    else if (q === "local_storage") {
+      // Set localStorage
+      localStorage.setItem("abc", "APPapple123");
+      console.log("LocalStorage set: abc=APPapple123");
+    }
+
+    else if (q === "javascript_var") {
+      // Set global JS variable
+      window.abc = "APPapple123";
+      console.log("JS variable set: abc=APPapple123");
+    }
+
+    else if (q === "cookie_local") {
+      // Set both cookie and localStorage
+         localStorage.setItem("abc", "apple123");
+         document.cookie = "abc=APPapple123; path=/";
+         console.log("Cookie & LocalStorage set: abc=APPapple123");
+    }
+
+    else {
+      console.log("No matching condition for q =", q);
+    }
+  })();
+</script>
+
+<!-- <script referrerPolicy="no-referrer-when-downgrade" src="https://dev.visualwebsiteoptimizer.com/tag/1225370.js" id="vwoCode"></script> -->
+    <!-- <script referrerPolicy="no-referrer-when-downgrade" src="https://dev.visualwebsiteoptimizer.com/cloud-run-test/final/20001246.js" id="vwoCode"></script> -->
+
+<!-- Start VWO Async V3.0 SmartCode -->
+<link rel="preconnect" href="https://edge.wingify.net" />
+<script type="text/javascript" id="vwoCode">
+	const params = new URLSearchParams(window.location.search);
+     const accId = parseInt(params.get("id"));
+     const accountId = accId || 21000071;
+     console.log("Account-Id ->", accountId);
+     /* eslint-disable no-undef */
+
+window._wingify_code || (function() {        
+    var account_id = accountId,
+        version = 3.0,
+        settings_tolerance = 2000,
+        hide_element = 'body',
+        hide_element_style =
+        'opacity:0 !important;filter:alpha(opacity=0) !important;background:none !important;transition:none !important';
+    /* DO NOT EDIT BELOW THIS LINE */
+    var t=window,n=document;if(-1<n.URL.indexOf('__wingify_disable__')||t._wingify_code)return;var i=!1,o=n.currentScript,e={sT:settings_tolerance,hES:hide_element_style,hE:hide_element};try{e=Object.assign(JSON.parse(localStorage.getItem('_vwo_'+account_id+'_config')),e)}catch(e){}var code={nonce:o.nonce,settings_tolerance:function(){return e.sT},hide_element:function(){return performance.getEntriesByName('first-contentful-paint')[0]?'':e.hE},hide_element_style:function(){return'{'+e.hES+'}'},getVersion:function(){return version},finish:function(){var e;!i&&(i=!0,e=n.getElementById('_vis_opt_path_hides'))&&e.parentNode.removeChild(e)},finished:function(){return i},addScript:function(e){var t=n.createElement('script');t.src=e,o.nonce&&t.setAttribute('nonce',o.nonce),t.fetchPriority='high',n.head.appendChild(t)},init:function(){t._vwo_settings_timer=setTimeout(function(){code.finish()},this.settings_tolerance());var e=n.createElement('style');e.id='_vis_opt_path_hides',o.nonce&&e.setAttribute('nonce',o.nonce),e.textContent=this.hide_element()+this.hide_element_style(),n.head.appendChild(e),this.addScript('https://edge.wingify.net/cloud-run-test/final/'+account_id+'.js')}};t._wingify_code=code;code.init();})();
+</script> 
+<!--End VWO Async SmartCode -->
 </head>
+
 <body>
-
-<!-- Navigation -->
-<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
-	<div class="container-fluid">
-		<a class="navbar-brand" href="#"><img src="img/logo6.jpg"></a>
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
-			<span class="navbar-toggler-icon"></span>
-		</button>
-		<div class="collapse navbar-collapse" id="navbarResponsive">
-			<ul class="navbar-nav ml-auto">
-				<li class="nav-item active">
-					<a class="nav-link" href="#">Home</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#">About</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#">Services</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#">Team</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#">Connect</a>
-				</li>
-			</ul>
-		</div>
-	</div>
-</nav>
-
-<!--- Image Slider -->
-<div id="slides" class="carousel slide" data-ride="carousel" data-aos="fade-up"
-		data-aos-offset="200"
-		data-aos-delay="50"
-		data-aos-duration="1000">
-	<ul class="carousel-indicators">
-		<li data-target="#slides" data-slide-to="0" class="active"></li>
-		<li data-target="#slides" data-slide-to="1"></li>
-		<li data-target="#slides" data-slide-to="2"></li>
-	</ul>
-	<div class="carousel-inner">
-		<div class="carousel-item active">
-			<img class="image" src="img/background.png">
-			<div class="carousel-caption">
-				<h1 class="display-2">Website</h1>
-				<h3>Complete Website Layout</h3>
-				<button type="button" class="btn btn-outline-light btn-lg">VIEW
-				DEMO</button>
-				<button type="button" class="btn btn-primary btn-lg">Get Started</button>
-			</div>
-		</div>
-		<div class="carousel-item">
-			<img class="image" src="img/background2.png">
-		</div>
-		<div class="carousel-item">
-			<img class="image" src="img/background3.png">
-		</div>
-	</div>
-</div>
-
-<!--- Jumbotron -->
-<div class="container-fluid" data-aos="fade-up"
-		data-aos-offset="200"
-		data-aos-delay="50"
-		data-aos-duration="1000">
-	<div class="row jumbotron">
-		<div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-10">
-			<p class="lead">A web hosting service allows individuals and
-				organizations to make their website accessible via the World
-				Wide Web.</p>
-		</div>
-		<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-2">
-			<a href="#"><button type="button" class="btn btn-outline-secondary
-			btn-lg">Web Hosting</button></a>
-		</div>
-	</div>
-</div>
-
-<!--- Welcome Section -->
-<div class="container-fluid padding"data-aos="fade-up"
-		data-aos-offset="200"
-		data-aos-delay="50"
-		data-aos-duration="1000">
-	<div class="row welcome text-center">
-		<div class="col-12">
-			<h1 class="display-4">Built with ease.</h1>
-		</div>
-		<hr>
-		<div class="col-12">
-			<p class="lead">Welcome to my website tutorial!
-				Bootstrap is a free and open-source front-end library with HTML and
-				CSS based designs.</p>
-		</div>
-	</div>
-</div>
-
-<!--- Three Column Section -->
-<div class="container-fluid padding"data-aos="fade-up"
-		data-aos-offset="200"
-		data-aos-delay="50"
-		data-aos-duration="1000">
-	<div class="row text-center padding">
-		<div class="col-xs-12 col-sm-6 col-md-4">
-			<i class="fas fa-code"></i>
-			<h3>HTML5</h3>
-			<p>Built with the latest version of HTML, HTML5.</p>
-		</div>
-		<div class="col-xs-12 col-sm-6 col-md-4">
-			<i class="fas fa-bold"></i>
-			<h3>BOOTSTRAP</h3>
-			<p>Built with the latest version of Bootstrap, Bootstrap 4.</p>
-		</div>
-		<div class="col-xs-12 col-md-4">
-			<i class="fab fa-css3"></i>
-			<h3>CSS3</h3>
-			<p>Built with the latest version of CSS, CSS3.</p>
-		</div>
-	</div>
-	<hr class="my-4">
-</div>
-
-<!--- Two Column Section -->
-<div class="container-fluid padding"data-aos="fade-up"
-		data-aos-offset="200"
-		data-aos-delay="50"
-		data-aos-duration="1000">
-	<div class="row padding">
-		<div class="col-md-12 col-lg-6">
-			<h2>If you build it...</h2>
-			<p>The columns will automatically stack on each other when
-				the screen is less than 576px wide.</p>
-			<p>Resize the browserwindow to see the effect. Responsive web
-				design has become more important as the amount of mobile traffic now
-				accounts for more than half of total internet traffic.</p>
-			<p>It can also display the web page differently depending on the
-				screen size or viewing device.</p>
-				<br>
-				<a href="#" class="btn btn-primary">Learn More</a>
-		</div>
-		<div class="col-lg-6">
-			<img src="img/desk.png" class="img-fluid">
-		</div>
-	</div>
-</div>
-
-<hr class="my-4">
-
-
-<!--- Meet the team -->
-<div class="container-fluid padding">
-	<div class="row welcome text-center">
-		<div class="col-12">
-			<h1 class="display-4">Meet the Team </h1>
-		</div>
-	</div>
-</div>
-
-<!--- Cards -->
-<div class="container-fluid padding" data-aos="fade-up"
-		data-aos-offset="200"
-		data-aos-delay="50"
-		data-aos-duration="1000">
-	<div class="row padding">
-		<div class="col-md-4">
-			<div class="card">
-				<img class="card-img-top" src="img/team1.png">
-				<div class="card-body">
-					<h4 class="card-title">John Doe</h4>
-					<p class="card-text">John is an Interent
-						entrepreneur with almost 20 years of experience.
-					</p>
-					<a href="#" class="btn btn-outline-secondary">See Profile</a>
-				</div>
-			</div>
-		</div>
-		<div class="col-md-4">
-			<div class="card">
-				<img class="card-img-top" src="img/team2.png">
-				<div class="card-body">
-					<h4 class="card-title">Mary Jo</h4>
-					<p class="card-text">Mary is a designer with a almost 10 years
-					of digital design experience.</p>
-					<a href="#" class="btn btn-outline-secondary">See Profile</a>
-				</div>
-			</div>
-		</div>
-		<div class="col-md-4">
-			<div class="card">
-				<img class="card-img-top" src="img/team3.png">
-				<div class="card-body">
-					<h4 class="card-title">Phil Ho</h4>
-					<p class="card-text">Phil is an developer with over 5 years
-					of web development experience.</p>
-					<a href="#" class="btn btn-outline-secondary">See Profile</a>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-
-<!--- Two Column Section -->
-<div class="container-fluid padding" data-aos="fade-up"
-		data-aos-offset="200"
-		data-aos-delay="50"
-		data-aos-duration="1000">
-	<div class="row padding">
-		<div class="col-md-12 col-lg-6">
-			<h2>Our Philosophy</h2>
-			<p>We know that greatness in a disruptive era requires bold
-				ambition, curious talent and a culture that believes we're
-			    smarter together.</p>
-			<p>We approach every challenge hostically, with best-in-class
-				expertise in data, creativity, media, technology, search, social and
-				more. We call this Alchemy. It has the power to build our clients'
-				brands and transform their business. And white it may seem like
-				magic, we've got it down to a science.
-			</p>
-
-		</div>
-		<div class="col-lg-6">
-			<img src="img/bootstrap2.png" class="img-fluid">
-		</div>
-	</div>
-	<hr class="my-4">
-</div>
-
-<!--- Connect -->
-<div class="container-fluid padding">
-	<div class="row text-center padding">
-		<div class="col-12">
-			<h2>Connect</h2>
-		</div>
-		<div class="col-12 social padding">
-			<a href="#"><i class="fab fa-facebook"></i></a>
-			<a href="#"><i class="fab fa-twitter"></i></a>
-			<a href="#"><i class="fab fa-google-plus-g"></i></a>
-			<a href="#"><i class="fab fa-instagram"></i></a>
-			<a href="#"><i class="fab fa-youtube"></i></a>
-		</div>
-	</div>
-</div>
-
-<!--- Footer -->
-<footer>
-	<div class="container-fluid padding" data-aos="fade-up"
-		data-aos-offset="200"
-		data-aos-delay="50"
-		data-aos-duration="1000">
-		<div class="row text-center">
-			<div class="col-md-4 pt-0">
-				<div class="footer-image">
-				<img src="img/logo6.jpg"></div>
-				<hr class="light">
-				<p>555-555-5555</p>
-				<p>email@hhemail.com</p>
-				<p>69 Street Name</p>
-				<p>City, State, 888</p>
-			</div>
-			<div class="col-md-4">
-				<hr class="light">
-				<h5>Our hours</h5>
-				<hr class="light">
-				<p>Monday: 9am - 5pm</p>
-				<p>Saturday: 10am - 4pm</p>
-				<p>Sunday: Closed</p>
-			</div>
-			<div class="col-md-4">
-				<hr class="light">
-				<h5>Service Area</h5>
-				<hr class="light">
-				<p>City, State, 900</p>
-				<p>City, State, 800</p>
-				<p>City, State, 700</p>
-				<p>City, State, 600</p>
-			</div>
-			<div class="col-12">
-				<hr class="light-100">
-				<h5>&copy; Website Learning </h5>
-			</div>
-		</div>
-	</div>
-</footer>
-
-<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script>
-AOS.init();
+   <script>
+    var testing = 10;
 </script>
 
+  <h1 style="text-align: center">Registration Form</h1>
+    <div class="div1">
+      <h2 id="WelMsg">Welcome to the website, Registration Starts Here...</h2>
+      <p id="Welpara">
+        Let's start now, just try to fill in the details carefully and
+        correctly.<br /><br />
+        <b>NOTE:-</b>Please enter a password that is at least 8 characters long.
+      </p>
+    </div>
+    <p id="p2"><strong>SPA BUTTON</strong></p>
+    <button id="spa_btn" onclick="historyPushUrl()">SPA URL</button>
+    <br/>
+    <br/>
+    <form action="" id="registrationForm">
+      <table>
+        <tr>
+          <td>Name:</td>
+          <td>
+            <input type="text" placeholder="Name" name="" />
+          </td>
+        </tr>
+        <tr>
+          <td>Phone Number:</td>
+          <td>
+            <input type="phone" placeholder="phoneNumber" />
+          </td>
+        </tr>
+        <tr>
+          <td>Email Id:</td>
+          <td>
+            <input type="email" placeholder="example1@*8" />
+          </td>
+        </tr>
+        <tr>
+          <td>Password:</td>
+          <td>
+            <input type="password" placeholder="Password" />
+          </td>
+        </tr>
+        <tr>
+          <td>Gender:</td>
+          <td>
+            <input type="radio" name="gender" />Male
+            <input type="radio" name="gender" />Female
+          </td>
+        </tr>
+        <tr>
+          <td>Date of Birth:</td>
+          <td>
+            <input type="date" />
+          </td>
+        </tr>
+        <tr>
+          <td>Hobbies:</td>
+          <td>
+            <input type="checkbox" singing />Singing
+            <input type="checkbox" Dancing />Dancing
+            <input type="checkbox" playing />Sports
+          </td>
+        </tr>
+        <tr>
+          <td>Education Qualification:</td>
+          <td>
+            <select>
+              <option>Select Option</option>
+              <option>10+2</option>
+              <option>Graduation</option>
+              <option>Postgraduation</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>Address:</td>
+          <td>
+            <textarea rows="5" col="17" placeholder="Address"></textarea>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input type="submit" id="submit_btn" value="Submit" />
+            <input type="reset" value="Reset" />
+          </td>
+        </tr>
+      </table>
+    </form>
+    <h3>
+      By clicking submit, you agree to our terms of service and privacy policy.
+    </h3>
+    <p>
+      After registering please check your email for a confirmation message.<br /><br />
+      Already a registered user? <a href="#">Click here</a>
+    </p>
+    <br />
+    <p id="p1"><strong>FEEDBACK-FORM</strong></p>
+    <div>
+      <form action="feedback.html" id="feedbackForm">
+        <label for="question"
+          >If you're facing any problem please write to us.We'll solve the issue
+          at the earliest.</label
+        ><br />
+        <br />
+        <br />
+        <input
+          class="feedBackForm"
+          id="answer"
+          name="feedback"
+          placeholder="Text"
+          size="100"
+          style="height: 100px"
+          type="text"
+          value=""
+        /><br />
+        <br />
+        <input type="submit" value="Submit" />
+      </form>
+    </div>
+    <br/>
+    <button onclick="spaNavigation()">SPA Navigation</button>
+    <br/>
+    <br/>
+    <a href="javascript:void(0)" onclick="location.hash='spa/1.html'"
+      >Change hash</a
+    >
+    <br/>
+    <br/>
+    <a id="Customlink" href="https://testdata.wingified.com/async/analyse.html?id=838540&test=CoalGoal">Click here for Link</a>
+    <p></p>
+    <button id="clickonlinkDummy">ClickElement</button>
+    <button id="testelement2">ClickElement2</button>
+    <button id="testelement3">ClickElement3</button>
+    <button id="testelement4">ClickElement4</button>
+    <button id="testelement5">ClickElement5</button>
+    <button id="clickMe">ClickMe !!!</button>
+
+    <button id="activateButton" onclick="activateVWO()">Activate API</button>
+    
+    <p>
+      <br />
+      <br />
+      <a href="suggestions.html" id="suggestions">Suggestions</a><br />
+      <br />
+      <br />
+      <br />
+      <a href="contact_us.html" id="contact_us">Contact us</a><br />
+      <br />
+      <br />
+      <br />
+      <a href="about.html" id="about">About</a>
+
+      <br />
+      <br />
+      <br />
+    </p>
+
+    <div style="height: 30px"></div>
+    <a id="dynamicLink"></a>
+    <p>
+      <button onclick="myFunction()">Generate Link</button>
+      <input id="input" />
+      <script>
+        function myFunction() {
+          document.getElementById("dynamicLink").innerHTML = "GENERATED LINK";
+          document.getElementById("dynamicLink").href =
+            document.getElementById("input").value;
+          //   location.href=document.getElementById("input").value;
+        }
+      </script>
+    </p>
+    <script>
+        let spaCount = 1;
+
+        function historyPushUrl() {
+            const url = new URL(window.location);
+            url.searchParams.set('spa', spaCount);
+            window.history.pushState({}, '', url);
+            spaCount++;
+        }
+
+        function spaNavigation()
+          {
+            history.pushState(null, null, '?query=' + Date.now());
+          }
+      
+    </script>
+    
+   <script>
+    /* function activateVWO() {
+        window.VWO = window.VWO || [];
+        window.VWO.push(['activate', {virtualPageUrl: 'https://testing-base.vercel.app/'}])
+        }
+
+      // Attach DOMContentLoaded event listener
+      document.addEventListener('DOMContentLoaded', activateVWO);
+      */
+    </script>
+    <script>document.getElementById('testelement5').addEventListener('click', function () {if (document.getElementById('newElementAdded')) return;var newButton = document.createElement('button');newButton.id = 'newElementAdded';newButton.innerText = 'New Element Added';document.body.appendChild(newButton);});</script>
+
+    <!-- ShadowDOM Test Cases Section -->
+    <div style="margin: 40px 0; padding: 20px; border-top: 3px solid #333;">
+        <h2 style="text-align: center; color: #333;">ShadowDOM Test Cases</h2>
+        
+        <!-- Test Case 1: Single-level ShadowDOM - Product Card with Button (Click Event) -->
+        <div style="margin: 30px 0; padding: 20px; border: 2px solid #ccc; border-radius: 8px;">
+            <h3>Test Case 1: Single-level ShadowDOM - Product Card</h3>
+            <p>Selector: <code>#product-card >> button.add-to-cart</code></p>
+            <product-card id="product-card"></product-card>
+        </div>
+
+        <!-- Test Case 2: Nested ShadowDOM - Search Results with Filter Panel (Click Event) -->
+        <div style="margin: 30px 0; padding: 20px; border: 2px solid #ccc; border-radius: 8px;">
+            <h3>Test Case 2: Nested ShadowDOM - Search Results</h3>
+            <p>Selector: <code>#search-results >> filter-panel >> input[type="checkbox"]</code></p>
+            <search-results id="search-results"></search-results>
+        </div>
+
+        <!-- Test Case 3: Single-level ShadowDOM - Search Box Input (Focus/Blur Events) -->
+        <div style="margin: 30px 0; padding: 20px; border: 2px solid #ccc; border-radius: 8px;">
+            <h3>Test Case 3: ShadowDOM Input - Focus/Blur Events</h3>
+            <p>Selector: <code>#search-box >> input[type="text"]</code></p>
+            <search-box id="search-box"></search-box>
+        </div>
+
+        <!-- Test Case 4: Single-level ShadowDOM - Hoverable Element -->
+        <div style="margin: 30px 0; padding: 20px; border: 2px solid #ccc; border-radius: 8px;">
+            <h3>Test Case 4: ShadowDOM - Hover Event</h3>
+            <p>Selector: <code>#hover-card >> .hover-button</code></p>
+            <hover-card id="hover-card"></hover-card>
+        </div>
+
+        <!-- Test Case 5: ShadowDOM with Slots -->
+        <div style="margin: 30px 0; padding: 20px; border: 2px solid #ccc; border-radius: 8px;">
+            <h3>Test Case 5: ShadowDOM - Slots Button</h3>
+            <p>Selector: <code>#slot-button >> button.slot-button</code></p>
+            <slot-button id="slot-button">
+                <span slot="slot-before-text">★</span>
+                Slots Button
+                <span slot="slot-after-text">→</span>
+            </slot-button>
+        </div>
+    </div>
+
+    <!-- ShadowDOM Custom Elements Script -->
+    <script>
+        // Custom Element 1: Product Card (Single-level ShadowDOM)
+        class ProductCard extends HTMLElement {
+            constructor() {
+                super();
+                const shadow = this.attachShadow({ mode: 'open' });
+                shadow.innerHTML = `
+                    <style>
+                        :host {
+                            display: block;
+                            border: 2px solid #ddd;
+                            border-radius: 8px;
+                            padding: 20px;
+                            max-width: 300px;
+                            background: #f9f9f9;
+                        }
+                        .product-title {
+                            font-size: 18px;
+                            font-weight: bold;
+                            margin-bottom: 10px;
+                        }
+                        .product-price {
+                            font-size: 20px;
+                            color: #e74c3c;
+                            margin-bottom: 15px;
+                        }
+                        button.add-to-cart {
+                            background-color: #3498db;
+                            color: white;
+                            border: none;
+                            padding: 10px 20px;
+                            border-radius: 5px;
+                            cursor: pointer;
+                            font-size: 16px;
+                        }
+                        button.add-to-cart:hover {
+                            background-color: #2980b9;
+                        }
+                    </style>
+                    <div class="product-title">Sample Product</div>
+                    <div class="product-price">$99.99</div>
+                    <button class="add-to-cart">Add to Cart</button>
+                `;
+            }
+        }
+        customElements.define('product-card', ProductCard);
+
+        // Custom Element 2: Filter Panel (for nested ShadowDOM)
+        class FilterPanel extends HTMLElement {
+            constructor() {
+                super();
+                const shadow = this.attachShadow({ mode: 'open' });
+                shadow.innerHTML = `
+                    <style>
+                        :host {
+                            display: block;
+                            padding: 15px;
+                            background: #fff;
+                            border: 1px solid #ddd;
+                            border-radius: 5px;
+                        }
+                        .filter-label {
+                            font-weight: bold;
+                            margin-bottom: 10px;
+                        }
+                        .filter-option {
+                            margin: 8px 0;
+                        }
+                        input[type="checkbox"] {
+                            margin-right: 8px;
+                        }
+                    </style>
+                    <div class="filter-label">Filter Options:</div>
+                    <div class="filter-option">
+                        <input type="checkbox" id="filter1" />
+                        <label for="filter1">Option 1</label>
+                    </div>
+                    <div class="filter-option">
+                        <input type="checkbox" id="filter2" />
+                        <label for="filter2">Option 2</label>
+                    </div>
+                `;
+            }
+        }
+        customElements.define('filter-panel', FilterPanel);
+
+        // Custom Element 3: Search Results (Nested ShadowDOM - contains FilterPanel)
+        class SearchResults extends HTMLElement {
+            constructor() {
+                super();
+                const shadow = this.attachShadow({ mode: 'open' });
+                shadow.innerHTML = `
+                    <style>
+                        :host {
+                            display: block;
+                            border: 2px solid #3498db;
+                            border-radius: 8px;
+                            padding: 20px;
+                            background: #ecf0f1;
+                        }
+                        .results-header {
+                            font-size: 18px;
+                            font-weight: bold;
+                            margin-bottom: 15px;
+                        }
+                    </style>
+                    <div class="results-header">Search Results</div>
+                    <filter-panel></filter-panel>
+                `;
+            }
+        }
+        customElements.define('search-results', SearchResults);
+
+        // Custom Element 4: Search Box (Single-level ShadowDOM with Input)
+        class SearchBox extends HTMLElement {
+            constructor() {
+                super();
+                const shadow = this.attachShadow({ mode: 'open' });
+                shadow.innerHTML = `
+                    <style>
+                        :host {
+                            display: block;
+                            border: 2px solid #95a5a6;
+                            border-radius: 8px;
+                            padding: 15px;
+                            background: #fff;
+                            max-width: 400px;
+                        }
+                        .search-label {
+                            display: block;
+                            margin-bottom: 8px;
+                            font-weight: bold;
+                        }
+                        input[type="text"] {
+                            width: 100%;
+                            padding: 10px;
+                            border: 1px solid #ddd;
+                            border-radius: 4px;
+                            font-size: 14px;
+                            box-sizing: border-box;
+                        }
+                        input[type="text"]:focus {
+                            outline: none;
+                            border-color: #3498db;
+                            box-shadow: 0 0 5px rgba(52, 152, 219, 0.3);
+                        }
+                    </style>
+                    <label class="search-label">Search:</label>
+                    <input type="text" placeholder="Type to search..." />
+                `;
+            }
+        }
+        customElements.define('search-box', SearchBox);
+
+        // Custom Element 5: Hover Card (Single-level ShadowDOM with Hoverable Element)
+        class HoverCard extends HTMLElement {
+            constructor() {
+                super();
+                const shadow = this.attachShadow({ mode: 'open' });
+                shadow.innerHTML = `
+                    <style>
+                        :host {
+                            display: block;
+                            border: 2px solid #9b59b6;
+                            border-radius: 8px;
+                            padding: 20px;
+                            background: #f4f4f4;
+                            max-width: 300px;
+                        }
+                        .card-title {
+                            font-size: 16px;
+                            margin-bottom: 15px;
+                        }
+                        .hover-button {
+                            background-color: #9b59b6;
+                            color: white;
+                            border: none;
+                            padding: 12px 24px;
+                            border-radius: 5px;
+                            cursor: pointer;
+                            font-size: 14px;
+                            transition: background-color 0.3s;
+                        }
+                        .hover-button:hover {
+                            background-color: #8e44ad;
+                        }
+                    </style>
+                    <div class="card-title">Hover Test Card</div>
+                    <button class="hover-button">Hover Me</button>
+                `;
+            }
+        }
+        customElements.define('hover-card', HoverCard);
+
+        // Custom Element 6: Button with Slots (Single-level ShadowDOM using <slot>)
+        class SlotButton extends HTMLElement {
+            constructor() {
+                super();
+                const shadow = this.attachShadow({ mode: 'open' });
+                shadow.innerHTML = `
+                    <style>
+                        :host {
+                            display: inline-block;
+                        }
+                        button.slot-button {
+                            background-color: #16a34a;
+                            color: white;
+                            border: none;
+                            padding: 10px 20px;
+                            border-radius: 999px;
+                            cursor: pointer;
+                            font-size: 14px;
+                            display: inline-flex;
+                            align-items: center;
+                            gap: 8px;
+                        }
+                        button.slot-button:hover {
+                            background-color: #15803d;
+                        }
+                    </style>
+                    <button class="slot-button">
+                        <slot name="slot-before-text"></slot>
+                        <span class="label"><slot></slot></span>
+                        <slot name="slot-after-text"></slot>
+                    </button>
+                `;
+            }
+        }
+        customElements.define('slot-button', SlotButton);
+    </script>
 </body>
+
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
